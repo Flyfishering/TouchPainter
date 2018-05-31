@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLY_CanvasViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-W3-1af">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="yFA-lj-PWN"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="MJ5-hU-cmV"/>
+                        <barButtonItem style="plain" systemItem="trash" id="NMA-Uv-jCa" customClass="CommandBarButton">
+                            <connections>
+                                <action selector="onBarButtonHit:" destination="-1" id="J3w-kx-C3d"/>
+                                <outlet property="command" destination="Ri9-uM-xWg" id="zIC-6O-APV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Xto-PQ-ooW"/>
+                        <barButtonItem image="save" style="plain" id="EqD-CZ-Iac" customClass="CommandBarButton">
+                            <connections>
+                                <action selector="onBarButtonHit:" destination="-1" id="euK-3Y-fQ3"/>
+                                <outlet property="command" destination="Ri9-uM-xWg" id="DME-0O-y4Z"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="kwn-qZ-VlZ"/>
+                        <barButtonItem tag="2" image="open" style="plain" id="gwn-ig-TQQ">
+                            <connections>
+                                <action selector="requestViewChangeByObject:" destination="HpK-tp-ftr" id="8Gu-QL-tt5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="4Qi-ra-udj"/>
+                        <barButtonItem tag="1" image="palette" style="plain" id="aDa-Gz-o8c">
+                            <connections>
+                                <action selector="requestViewChangeByObject:" destination="HpK-tp-ftr" id="Xqw-8Q-6Vr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zLL-vx-EcC"/>
+                        <barButtonItem tag="4" image="undo" id="0I3-Lq-TeJ">
+                            <connections>
+                                <action selector="onBarButtonHit:" destination="-1" id="seq-jM-vFK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="CEM-bO-4Cq"/>
+                        <barButtonItem tag="5" image="redo" style="plain" id="sNu-17-vXp">
+                            <connections>
+                                <action selector="onBarButtonHit:" destination="-1" id="oXo-aZ-q39"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="69L-oW-HMM"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dAg-W3-1af" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="2Uh-Y1-c2q"/>
+                <constraint firstItem="dAg-W3-1af" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hNs-Gm-KlG"/>
+                <constraint firstItem="dAg-W3-1af" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="o32-V9-Cfl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+        <customObject id="HpK-tp-ftr" customClass="FLY_CoordinatingController"/>
+        <customObject id="Ri9-uM-xWg" customClass="DeleteScribbleCommand"/>
+        <customObject id="lLK-ec-P2F" customClass="SaveScribbleCommand"/>
+        <customObject id="C4u-35-vrT" customClass="TestObject"/>
+    </objects>
+    <resources>
+        <image name="open" width="24" height="24"/>
+        <image name="palette" width="24" height="20"/>
+        <image name="redo" width="24" height="24"/>
+        <image name="save" width="24" height="24"/>
+        <image name="undo" width="24" height="24"/>
+    </resources>
+</document>

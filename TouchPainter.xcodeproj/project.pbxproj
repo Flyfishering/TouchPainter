@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7160A7D20A68200004E2BB9 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B7160A7C20A68200004E2BB9 /* TestObject.m */; };
+		B7160A8020A693DE004E2BB9 /* FLY_button.m in Sources */ = {isa = PBXBuildFile; fileRef = B7160A7F20A693DE004E2BB9 /* FLY_button.m */; };
+		B72642EA20BE4AFB00C2C71C /* CommonHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B72642E920BE4AFB00C2C71C /* CommonHeader.m */; };
+		B794651320A188D000285603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B794651220A188D000285603 /* AppDelegate.m */; };
+		B794651620A188D000285603 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794651520A188D000285603 /* ViewController.m */; };
+		B794651920A188D000285603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794651720A188D000285603 /* Main.storyboard */; };
+		B794651B20A188D100285603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B794651A20A188D100285603 /* Assets.xcassets */; };
+		B794651E20A188D100285603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B794651C20A188D100285603 /* LaunchScreen.storyboard */; };
+		B794652120A188D100285603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B794652020A188D100285603 /* main.m */; };
+		B794652B20A188D100285603 /* TouchPainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B794652A20A188D100285603 /* TouchPainterTests.m */; };
+		B794653620A188D100285603 /* TouchPainterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B794653520A188D100285603 /* TouchPainterUITests.m */; };
+		B794654520A1895000285603 /* FLY_CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794654420A1895000285603 /* FLY_CoordinatingController.m */; };
+		B794656720A18AC000285603 /* FLY_CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B794655D20A18ABF00285603 /* FLY_CanvasViewController.xib */; };
+		B794656820A18AC000285603 /* FLY_CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794655E20A18ABF00285603 /* FLY_CanvasViewController.m */; };
+		B794656920A18AC000285603 /* FLY_PaletteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B794656020A18AC000285603 /* FLY_PaletteViewController.xib */; };
+		B794656A20A18AC000285603 /* FLY_PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794656220A18AC000285603 /* FLY_PaletteViewController.m */; };
+		B794656B20A18AC000285603 /* FLY_ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B794656420A18AC000285603 /* FLY_ThumbnailViewController.m */; };
+		B794656C20A18AC000285603 /* FLY_ThumbnailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B794656620A18AC000285603 /* FLY_ThumbnailViewController.xib */; };
+		B794657D20A1996500285603 /* UIView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B794657320A1996500285603 /* UIView+UIImage.m */; };
+		B794657E20A1996500285603 /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B794657620A1996500285603 /* CommandSlider.m */; };
+		B794657F20A1996500285603 /* CommandBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B794657920A1996500285603 /* CommandBarButton.m */; };
+		B794658020A1996500285603 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = B794657B20A1996500285603 /* NSMutableArray+Stack.m */; };
+		B794658E20A199B200285603 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = B794658420A199B200285603 /* Command.m */; };
+		B794658F20A199B200285603 /* DeleteScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B794658520A199B200285603 /* DeleteScribbleCommand.m */; };
+		B794659020A199B200285603 /* OpenScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B794658620A199B200285603 /* OpenScribbleCommand.m */; };
+		B794659120A199B200285603 /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B794658820A199B200285603 /* SetStrokeColorCommand.m */; };
+		B794659220A199B200285603 /* SaveScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B794658920A199B200285603 /* SaveScribbleCommand.m */; };
+		B794659320A199B200285603 /* SetStrokeSizeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B794658C20A199B200285603 /* SetStrokeSizeCommand.m */; };
+		B794659B20A199F300285603 /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B794659620A199F300285603 /* CanvasViewGenerator.m */; };
+		B794659C20A199F300285603 /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B794659720A199F300285603 /* ClothCanvasViewGenerator.m */; };
+		B794659D20A199F300285603 /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B794659920A199F300285603 /* PaperCanvasViewGenerator.m */; };
+		B79465A220A19A7100285603 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465A120A19A7000285603 /* MarkRenderer.m */; };
+		B79465AD20A19A7D00285603 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465A520A19A7D00285603 /* Dot.m */; };
+		B79465AE20A19A7D00285603 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465A920A19A7D00285603 /* Vertex.m */; };
+		B79465AF20A19A7D00285603 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465AB20A19A7D00285603 /* Stroke.m */; };
+		B79465B020A19A7D00285603 /* PrototypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465AC20A19A7D00285603 /* PrototypeController.m */; };
+		B79465B520A19A8800285603 /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465B220A19A8800285603 /* MarkEnumerator.m */; };
+		B79465BC20A19B3600285603 /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465BA20A19B3600285603 /* ScribbleThumbnailViewImageProxy.m */; };
+		B79465BD20A19B3600285603 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465BB20A19B3600285603 /* ScribbleThumbnailView.m */; };
+		B79465C620A19B4200285603 /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465BF20A19B4200285603 /* ScribbleMemento.m */; };
+		B79465C720A19B4200285603 /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465C120A19B4200285603 /* ScribbleManager.m */; };
+		B79465C820A19B4200285603 /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465C520A19B4200285603 /* Scribble.m */; };
+		B79465D020A19BA200285603 /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465CA20A19BA200285603 /* ClothCanvasView.m */; };
+		B79465D120A19BA200285603 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465CB20A19BA200285603 /* CanvasView.m */; };
+		B79465D220A19BA200285603 /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465CF20A19BA200285603 /* PaperCanvasView.m */; };
+		B79465D520A1BF9600285603 /* ScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B79465D420A1BF9600285603 /* ScribbleThumbnailCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B794652720A188D100285603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B794650620A188CF00285603 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B794650D20A188CF00285603;
+			remoteInfo = TouchPainter;
+		};
+		B794653220A188D100285603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B794650620A188CF00285603 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B794650D20A188CF00285603;
+			remoteInfo = TouchPainter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7160A7B20A68200004E2BB9 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		B7160A7C20A68200004E2BB9 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		B7160A7E20A693DE004E2BB9 /* FLY_button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLY_button.h; sourceTree = "<group>"; };
+		B7160A7F20A693DE004E2BB9 /* FLY_button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLY_button.m; sourceTree = "<group>"; };
+		B72642E820BE4AFB00C2C71C /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		B72642E920BE4AFB00C2C71C /* CommonHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonHeader.m; sourceTree = "<group>"; };
+		B794650E20A188CF00285603 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B794651120A188D000285603 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B794651220A188D000285603 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B794651420A188D000285603 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B794651520A188D000285603 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B794651820A188D000285603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B794651A20A188D100285603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B794651D20A188D100285603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B794651F20A188D100285603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B794652020A188D100285603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B794652620A188D100285603 /* TouchPainterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchPainterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B794652A20A188D100285603 /* TouchPainterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPainterTests.m; sourceTree = "<group>"; };
+		B794652C20A188D100285603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B794653120A188D100285603 /* TouchPainterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchPainterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B794653520A188D100285603 /* TouchPainterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPainterUITests.m; sourceTree = "<group>"; };
+		B794653720A188D100285603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B794654320A1895000285603 /* FLY_CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLY_CoordinatingController.h; sourceTree = "<group>"; };
+		B794654420A1895000285603 /* FLY_CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLY_CoordinatingController.m; sourceTree = "<group>"; };
+		B794655C20A18ABF00285603 /* FLY_CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLY_CanvasViewController.h; sourceTree = "<group>"; };
+		B794655D20A18ABF00285603 /* FLY_CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLY_CanvasViewController.xib; sourceTree = "<group>"; };
+		B794655E20A18ABF00285603 /* FLY_CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLY_CanvasViewController.m; sourceTree = "<group>"; };
+		B794656020A18AC000285603 /* FLY_PaletteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLY_PaletteViewController.xib; sourceTree = "<group>"; };
+		B794656120A18AC000285603 /* FLY_PaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLY_PaletteViewController.h; sourceTree = "<group>"; };
+		B794656220A18AC000285603 /* FLY_PaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLY_PaletteViewController.m; sourceTree = "<group>"; };
+		B794656420A18AC000285603 /* FLY_ThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLY_ThumbnailViewController.m; sourceTree = "<group>"; };
+		B794656520A18AC000285603 /* FLY_ThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLY_ThumbnailViewController.h; sourceTree = "<group>"; };
+		B794656620A18AC000285603 /* FLY_ThumbnailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLY_ThumbnailViewController.xib; sourceTree = "<group>"; };
+		B794657220A1996500285603 /* UIView+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIImage.h"; sourceTree = "<group>"; };
+		B794657320A1996500285603 /* UIView+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIImage.m"; sourceTree = "<group>"; };
+		B794657520A1996500285603 /* CommandSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
+		B794657620A1996500285603 /* CommandSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
+		B794657820A1996500285603 /* CommandBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandBarButton.h; sourceTree = "<group>"; };
+		B794657920A1996500285603 /* CommandBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandBarButton.m; sourceTree = "<group>"; };
+		B794657B20A1996500285603 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		B794657C20A1996500285603 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		B794658220A199B200285603 /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
+		B794658320A199B200285603 /* SaveScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveScribbleCommand.h; sourceTree = "<group>"; };
+		B794658420A199B200285603 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		B794658520A199B200285603 /* DeleteScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteScribbleCommand.m; sourceTree = "<group>"; };
+		B794658620A199B200285603 /* OpenScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenScribbleCommand.m; sourceTree = "<group>"; };
+		B794658720A199B200285603 /* SetStrokeSizeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeSizeCommand.h; sourceTree = "<group>"; };
+		B794658820A199B200285603 /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		B794658920A199B200285603 /* SaveScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveScribbleCommand.m; sourceTree = "<group>"; };
+		B794658A20A199B200285603 /* DeleteScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteScribbleCommand.h; sourceTree = "<group>"; };
+		B794658B20A199B200285603 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		B794658C20A199B200285603 /* SetStrokeSizeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetStrokeSizeCommand.m; sourceTree = "<group>"; };
+		B794658D20A199B200285603 /* OpenScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenScribbleCommand.h; sourceTree = "<group>"; };
+		B794659520A199F300285603 /* PaperCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		B794659620A199F300285603 /* CanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
+		B794659720A199F300285603 /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
+		B794659820A199F300285603 /* CanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewGenerator.h; sourceTree = "<group>"; };
+		B794659920A199F300285603 /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		B794659A20A199F300285603 /* ClothCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		B794659F20A19A7000285603 /* MarkVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
+		B79465A020A19A7000285603 /* MarkRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
+		B79465A120A19A7000285603 /* MarkRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkRenderer.m; sourceTree = "<group>"; };
+		B79465A420A19A7D00285603 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		B79465A520A19A7D00285603 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		B79465A620A19A7D00285603 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		B79465A720A19A7D00285603 /* PrototypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeController.h; sourceTree = "<group>"; };
+		B79465A820A19A7D00285603 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		B79465A920A19A7D00285603 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		B79465AA20A19A7D00285603 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		B79465AB20A19A7D00285603 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		B79465AC20A19A7D00285603 /* PrototypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeController.m; sourceTree = "<group>"; };
+		B79465B220A19A8800285603 /* MarkEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		B79465B320A19A8800285603 /* MarkEnumerator+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MarkEnumerator+Internal.h"; sourceTree = "<group>"; };
+		B79465B420A19A8800285603 /* MarkEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		B79465B720A19B3600285603 /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		B79465B820A19B3600285603 /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		B79465B920A19B3600285603 /* ScribbleSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleSource.h; sourceTree = "<group>"; };
+		B79465BA20A19B3600285603 /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
+		B79465BB20A19B3600285603 /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailView.m; sourceTree = "<group>"; };
+		B79465BF20A19B4200285603 /* ScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		B79465C020A19B4200285603 /* Scribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		B79465C120A19B4200285603 /* ScribbleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
+		B79465C220A19B4200285603 /* ScribbleMemento+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		B79465C320A19B4200285603 /* ScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		B79465C420A19B4200285603 /* ScribbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
+		B79465C520A19B4200285603 /* Scribble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		B79465CA20A19BA200285603 /* ClothCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasView.m; sourceTree = "<group>"; };
+		B79465CB20A19BA200285603 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		B79465CC20A19BA200285603 /* PaperCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
+		B79465CD20A19BA200285603 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		B79465CE20A19BA200285603 /* ClothCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothCanvasView.h; sourceTree = "<group>"; };
+		B79465CF20A19BA200285603 /* PaperCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasView.m; sourceTree = "<group>"; };
+		B79465D320A1BF9600285603 /* ScribbleThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailCell.h; sourceTree = "<group>"; };
+		B79465D420A1BF9600285603 /* ScribbleThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B794650B20A188CF00285603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794652320A188D100285603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794652E20A188D100285603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B794650520A188CF00285603 = {
+			isa = PBXGroup;
+			children = (
+				B794651020A188CF00285603 /* TouchPainter */,
+				B794652920A188D100285603 /* TouchPainterTests */,
+				B794653420A188D100285603 /* TouchPainterUITests */,
+				B794650F20A188CF00285603 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B794650F20A188CF00285603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B794650E20A188CF00285603 /* TouchPainter.app */,
+				B794652620A188D100285603 /* TouchPainterTests.xctest */,
+				B794653120A188D100285603 /* TouchPainterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B794651020A188CF00285603 /* TouchPainter */ = {
+			isa = PBXGroup;
+			children = (
+				B794651120A188D000285603 /* AppDelegate.h */,
+				B794651220A188D000285603 /* AppDelegate.m */,
+				B794651420A188D000285603 /* ViewController.h */,
+				B794651520A188D000285603 /* ViewController.m */,
+				B72642E820BE4AFB00C2C71C /* CommonHeader.h */,
+				B72642E920BE4AFB00C2C71C /* CommonHeader.m */,
+				B794651720A188D000285603 /* Main.storyboard */,
+				B794651A20A188D100285603 /* Assets.xcassets */,
+				B794651C20A188D100285603 /* LaunchScreen.storyboard */,
+				B794651F20A188D100285603 /* Info.plist */,
+				B79465C920A19BA200285603 /* Views */,
+				B79465BE20A19B4200285603 /* Memento Observer */,
+				B79465B620A19B3600285603 /* Proxy */,
+				B794658120A199B200285603 /* Command */,
+				B794657020A1996500285603 /* Utilities */,
+				B794659420A199F300285603 /* FactoryMethod */,
+				B794659E20A19A7000285603 /* Visitor */,
+				B79465B120A19A8800285603 /* iterator */,
+				B79465A320A19A7D00285603 /* Composite Prototype Iterator */,
+				B794652020A188D100285603 /* main.m */,
+				B794654320A1895000285603 /* FLY_CoordinatingController.h */,
+				B794654420A1895000285603 /* FLY_CoordinatingController.m */,
+				B7160A7B20A68200004E2BB9 /* TestObject.h */,
+				B7160A7C20A68200004E2BB9 /* TestObject.m */,
+				B7160A7E20A693DE004E2BB9 /* FLY_button.h */,
+				B7160A7F20A693DE004E2BB9 /* FLY_button.m */,
+				B794655B20A18ABF00285603 /* CanvasViewController */,
+				B794655F20A18AC000285603 /* PaletteViewController */,
+				B794656320A18AC000285603 /* ThumbnailViewController */,
+			);
+			path = TouchPainter;
+			sourceTree = "<group>";
+		};
+		B794652920A188D100285603 /* TouchPainterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B794652A20A188D100285603 /* TouchPainterTests.m */,
+				B794652C20A188D100285603 /* Info.plist */,
+			);
+			path = TouchPainterTests;
+			sourceTree = "<group>";
+		};
+		B794653420A188D100285603 /* TouchPainterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B794653520A188D100285603 /* TouchPainterUITests.m */,
+				B794653720A188D100285603 /* Info.plist */,
+			);
+			path = TouchPainterUITests;
+			sourceTree = "<group>";
+		};
+		B794655B20A18ABF00285603 /* CanvasViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B794655C20A18ABF00285603 /* FLY_CanvasViewController.h */,
+				B794655E20A18ABF00285603 /* FLY_CanvasViewController.m */,
+				B794655D20A18ABF00285603 /* FLY_CanvasViewController.xib */,
+			);
+			path = CanvasViewController;
+			sourceTree = "<group>";
+		};
+		B794655F20A18AC000285603 /* PaletteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B794656120A18AC000285603 /* FLY_PaletteViewController.h */,
+				B794656220A18AC000285603 /* FLY_PaletteViewController.m */,
+				B794656020A18AC000285603 /* FLY_PaletteViewController.xib */,
+			);
+			path = PaletteViewController;
+			sourceTree = "<group>";
+		};
+		B794656320A18AC000285603 /* ThumbnailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B79465D320A1BF9600285603 /* ScribbleThumbnailCell.h */,
+				B79465D420A1BF9600285603 /* ScribbleThumbnailCell.m */,
+				B794656420A18AC000285603 /* FLY_ThumbnailViewController.m */,
+				B794656520A18AC000285603 /* FLY_ThumbnailViewController.h */,
+				B794656620A18AC000285603 /* FLY_ThumbnailViewController.xib */,
+			);
+			path = ThumbnailViewController;
+			sourceTree = "<group>";
+		};
+		B794657020A1996500285603 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B794657120A1996500285603 /* View2Image */,
+				B794657420A1996500285603 /* CommandSlider */,
+				B794657720A1996500285603 /* CommandButton */,
+				B794657A20A1996500285603 /* CustomStack */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B794657120A1996500285603 /* View2Image */ = {
+			isa = PBXGroup;
+			children = (
+				B794657220A1996500285603 /* UIView+UIImage.h */,
+				B794657320A1996500285603 /* UIView+UIImage.m */,
+			);
+			path = View2Image;
+			sourceTree = "<group>";
+		};
+		B794657420A1996500285603 /* CommandSlider */ = {
+			isa = PBXGroup;
+			children = (
+				B794657520A1996500285603 /* CommandSlider.h */,
+				B794657620A1996500285603 /* CommandSlider.m */,
+			);
+			path = CommandSlider;
+			sourceTree = "<group>";
+		};
+		B794657720A1996500285603 /* CommandButton */ = {
+			isa = PBXGroup;
+			children = (
+				B794657820A1996500285603 /* CommandBarButton.h */,
+				B794657920A1996500285603 /* CommandBarButton.m */,
+			);
+			path = CommandButton;
+			sourceTree = "<group>";
+		};
+		B794657A20A1996500285603 /* CustomStack */ = {
+			isa = PBXGroup;
+			children = (
+				B794657B20A1996500285603 /* NSMutableArray+Stack.m */,
+				B794657C20A1996500285603 /* NSMutableArray+Stack.h */,
+			);
+			path = CustomStack;
+			sourceTree = "<group>";
+		};
+		B794658120A199B200285603 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				B794658B20A199B200285603 /* Command.h */,
+				B794658420A199B200285603 /* Command.m */,
+				B794658220A199B200285603 /* SetStrokeColorCommand.h */,
+				B794658320A199B200285603 /* SaveScribbleCommand.h */,
+				B794658A20A199B200285603 /* DeleteScribbleCommand.h */,
+				B794658520A199B200285603 /* DeleteScribbleCommand.m */,
+				B794658620A199B200285603 /* OpenScribbleCommand.m */,
+				B794658720A199B200285603 /* SetStrokeSizeCommand.h */,
+				B794658820A199B200285603 /* SetStrokeColorCommand.m */,
+				B794658920A199B200285603 /* SaveScribbleCommand.m */,
+				B794658C20A199B200285603 /* SetStrokeSizeCommand.m */,
+				B794658D20A199B200285603 /* OpenScribbleCommand.h */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		B794659420A199F300285603 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				B794659520A199F300285603 /* PaperCanvasViewGenerator.h */,
+				B794659620A199F300285603 /* CanvasViewGenerator.m */,
+				B794659720A199F300285603 /* ClothCanvasViewGenerator.m */,
+				B794659820A199F300285603 /* CanvasViewGenerator.h */,
+				B794659920A199F300285603 /* PaperCanvasViewGenerator.m */,
+				B794659A20A199F300285603 /* ClothCanvasViewGenerator.h */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		B794659E20A19A7000285603 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				B794659F20A19A7000285603 /* MarkVisitor.h */,
+				B79465A020A19A7000285603 /* MarkRenderer.h */,
+				B79465A120A19A7000285603 /* MarkRenderer.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
+		B79465A320A19A7D00285603 /* Composite Prototype Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				B79465A420A19A7D00285603 /* Vertex.h */,
+				B79465A520A19A7D00285603 /* Dot.m */,
+				B79465A620A19A7D00285603 /* Mark.h */,
+				B79465A720A19A7D00285603 /* PrototypeController.h */,
+				B79465A820A19A7D00285603 /* Stroke.h */,
+				B79465A920A19A7D00285603 /* Vertex.m */,
+				B79465AA20A19A7D00285603 /* Dot.h */,
+				B79465AB20A19A7D00285603 /* Stroke.m */,
+				B79465AC20A19A7D00285603 /* PrototypeController.m */,
+			);
+			path = "Composite Prototype Iterator";
+			sourceTree = "<group>";
+		};
+		B79465B120A19A8800285603 /* iterator */ = {
+			isa = PBXGroup;
+			children = (
+				B79465B220A19A8800285603 /* MarkEnumerator.m */,
+				B79465B320A19A8800285603 /* MarkEnumerator+Internal.h */,
+				B79465B420A19A8800285603 /* MarkEnumerator.h */,
+			);
+			path = iterator;
+			sourceTree = "<group>";
+		};
+		B79465B620A19B3600285603 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				B79465B720A19B3600285603 /* ScribbleThumbnailView.h */,
+				B79465B820A19B3600285603 /* ScribbleThumbnailViewImageProxy.h */,
+				B79465B920A19B3600285603 /* ScribbleSource.h */,
+				B79465BA20A19B3600285603 /* ScribbleThumbnailViewImageProxy.m */,
+				B79465BB20A19B3600285603 /* ScribbleThumbnailView.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		B79465BE20A19B4200285603 /* Memento Observer */ = {
+			isa = PBXGroup;
+			children = (
+				B79465C020A19B4200285603 /* Scribble.h */,
+				B79465C520A19B4200285603 /* Scribble.m */,
+				B79465C320A19B4200285603 /* ScribbleMemento.h */,
+				B79465BF20A19B4200285603 /* ScribbleMemento.m */,
+				B79465C420A19B4200285603 /* ScribbleManager.h */,
+				B79465C120A19B4200285603 /* ScribbleManager.m */,
+				B79465C220A19B4200285603 /* ScribbleMemento+Friend.h */,
+			);
+			path = "Memento Observer";
+			sourceTree = "<group>";
+		};
+		B79465C920A19BA200285603 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B79465CE20A19BA200285603 /* ClothCanvasView.h */,
+				B79465CA20A19BA200285603 /* ClothCanvasView.m */,
+				B79465CD20A19BA200285603 /* CanvasView.h */,
+				B79465CB20A19BA200285603 /* CanvasView.m */,
+				B79465CC20A19BA200285603 /* PaperCanvasView.h */,
+				B79465CF20A19BA200285603 /* PaperCanvasView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B794650D20A188CF00285603 /* TouchPainter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B794653A20A188D100285603 /* Build configuration list for PBXNativeTarget "TouchPainter" */;
+			buildPhases = (
+				B794650A20A188CF00285603 /* Sources */,
+				B794650B20A188CF00285603 /* Frameworks */,
+				B794650C20A188CF00285603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchPainter;
+			productName = TouchPainter;
+			productReference = B794650E20A188CF00285603 /* TouchPainter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B794652520A188D100285603 /* TouchPainterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B794653D20A188D100285603 /* Build configuration list for PBXNativeTarget "TouchPainterTests" */;
+			buildPhases = (
+				B794652220A188D100285603 /* Sources */,
+				B794652320A188D100285603 /* Frameworks */,
+				B794652420A188D100285603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B794652820A188D100285603 /* PBXTargetDependency */,
+			);
+			name = TouchPainterTests;
+			productName = TouchPainterTests;
+			productReference = B794652620A188D100285603 /* TouchPainterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B794653020A188D100285603 /* TouchPainterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B794654020A188D100285603 /* Build configuration list for PBXNativeTarget "TouchPainterUITests" */;
+			buildPhases = (
+				B794652D20A188D100285603 /* Sources */,
+				B794652E20A188D100285603 /* Frameworks */,
+				B794652F20A188D100285603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B794653320A188D100285603 /* PBXTargetDependency */,
+			);
+			name = TouchPainterUITests;
+			productName = TouchPainterUITests;
+			productReference = B794653120A188D100285603 /* TouchPainterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B794650620A188CF00285603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = wangbinbin;
+				TargetAttributes = {
+					B794650D20A188CF00285603 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					B794652520A188D100285603 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B794650D20A188CF00285603;
+					};
+					B794653020A188D100285603 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B794650D20A188CF00285603;
+					};
+				};
+			};
+			buildConfigurationList = B794650920A188CF00285603 /* Build configuration list for PBXProject "TouchPainter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B794650520A188CF00285603;
+			productRefGroup = B794650F20A188CF00285603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B794650D20A188CF00285603 /* TouchPainter */,
+				B794652520A188D100285603 /* TouchPainterTests */,
+				B794653020A188D100285603 /* TouchPainterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B794650C20A188CF00285603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794656920A18AC000285603 /* FLY_PaletteViewController.xib in Resources */,
+				B794651E20A188D100285603 /* LaunchScreen.storyboard in Resources */,
+				B794651B20A188D100285603 /* Assets.xcassets in Resources */,
+				B794656720A18AC000285603 /* FLY_CanvasViewController.xib in Resources */,
+				B794651920A188D000285603 /* Main.storyboard in Resources */,
+				B794656C20A18AC000285603 /* FLY_ThumbnailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794652420A188D100285603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794652F20A188D100285603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B794650A20A188CF00285603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794658F20A199B200285603 /* DeleteScribbleCommand.m in Sources */,
+				B79465AE20A19A7D00285603 /* Vertex.m in Sources */,
+				B79465B020A19A7D00285603 /* PrototypeController.m in Sources */,
+				B794659C20A199F300285603 /* ClothCanvasViewGenerator.m in Sources */,
+				B794658020A1996500285603 /* NSMutableArray+Stack.m in Sources */,
+				B79465C620A19B4200285603 /* ScribbleMemento.m in Sources */,
+				B794656A20A18AC000285603 /* FLY_PaletteViewController.m in Sources */,
+				B72642EA20BE4AFB00C2C71C /* CommonHeader.m in Sources */,
+				B79465B520A19A8800285603 /* MarkEnumerator.m in Sources */,
+				B79465D020A19BA200285603 /* ClothCanvasView.m in Sources */,
+				B794657F20A1996500285603 /* CommandBarButton.m in Sources */,
+				B7160A7D20A68200004E2BB9 /* TestObject.m in Sources */,
+				B794659120A199B200285603 /* SetStrokeColorCommand.m in Sources */,
+				B794656B20A18AC000285603 /* FLY_ThumbnailViewController.m in Sources */,
+				B79465C820A19B4200285603 /* Scribble.m in Sources */,
+				B794659220A199B200285603 /* SaveScribbleCommand.m in Sources */,
+				B794651620A188D000285603 /* ViewController.m in Sources */,
+				B794659020A199B200285603 /* OpenScribbleCommand.m in Sources */,
+				B794652120A188D100285603 /* main.m in Sources */,
+				B79465AD20A19A7D00285603 /* Dot.m in Sources */,
+				B79465D120A19BA200285603 /* CanvasView.m in Sources */,
+				B794656820A18AC000285603 /* FLY_CanvasViewController.m in Sources */,
+				B794654520A1895000285603 /* FLY_CoordinatingController.m in Sources */,
+				B794658E20A199B200285603 /* Command.m in Sources */,
+				B79465BC20A19B3600285603 /* ScribbleThumbnailViewImageProxy.m in Sources */,
+				B794657D20A1996500285603 /* UIView+UIImage.m in Sources */,
+				B79465A220A19A7100285603 /* MarkRenderer.m in Sources */,
+				B794659320A199B200285603 /* SetStrokeSizeCommand.m in Sources */,
+				B794659B20A199F300285603 /* CanvasViewGenerator.m in Sources */,
+				B79465BD20A19B3600285603 /* ScribbleThumbnailView.m in Sources */,
+				B79465C720A19B4200285603 /* ScribbleManager.m in Sources */,
+				B79465D220A19BA200285603 /* PaperCanvasView.m in Sources */,
+				B79465AF20A19A7D00285603 /* Stroke.m in Sources */,
+				B794659D20A199F300285603 /* PaperCanvasViewGenerator.m in Sources */,
+				B794657E20A1996500285603 /* CommandSlider.m in Sources */,
+				B79465D520A1BF9600285603 /* ScribbleThumbnailCell.m in Sources */,
+				B7160A8020A693DE004E2BB9 /* FLY_button.m in Sources */,
+				B794651320A188D000285603 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794652220A188D100285603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794652B20A188D100285603 /* TouchPainterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794652D20A188D100285603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794653620A188D100285603 /* TouchPainterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B794652820A188D100285603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B794650D20A188CF00285603 /* TouchPainter */;
+			targetProxy = B794652720A188D100285603 /* PBXContainerItemProxy */;
+		};
+		B794653320A188D100285603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B794650D20A188CF00285603 /* TouchPainter */;
+			targetProxy = B794653220A188D100285603 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B794651720A188D000285603 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B794651820A188D000285603 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B794651C20A188D100285603 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B794651D20A188D100285603 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B794653820A188D100285603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B794653920A188D100285603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B794653B20A188D100285603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = TouchPainter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangbinbin.TouchPainter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B794653C20A188D100285603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = TouchPainter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangbinbin.TouchPainter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B794653E20A188D100285603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = TouchPainterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangbinbin.TouchPainterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchPainter.app/TouchPainter";
+			};
+			name = Debug;
+		};
+		B794653F20A188D100285603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = TouchPainterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangbinbin.TouchPainterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchPainter.app/TouchPainter";
+			};
+			name = Release;
+		};
+		B794654120A188D100285603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = TouchPainterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangbinbin.TouchPainterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchPainter;
+			};
+			name = Debug;
+		};
+		B794654220A188D100285603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N3LY2CR7S;
+				INFOPLIST_FILE = TouchPainterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangbinbin.TouchPainterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchPainter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B794650920A188CF00285603 /* Build configuration list for PBXProject "TouchPainter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B794653820A188D100285603 /* Debug */,
+				B794653920A188D100285603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B794653A20A188D100285603 /* Build configuration list for PBXNativeTarget "TouchPainter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B794653B20A188D100285603 /* Debug */,
+				B794653C20A188D100285603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B794653D20A188D100285603 /* Build configuration list for PBXNativeTarget "TouchPainterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B794653E20A188D100285603 /* Debug */,
+				B794653F20A188D100285603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B794654020A188D100285603 /* Build configuration list for PBXNativeTarget "TouchPainterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B794654120A188D100285603 /* Debug */,
+				B794654220A188D100285603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B794650620A188CF00285603 /* Project object */;
+}
